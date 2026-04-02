@@ -1,12 +1,12 @@
 {
   "mcpServers": {
     "job-tracker": {
-      "command": "python",
+      "command": "/Users/sachinpandey/Desktop/All_Projects/job-agent/.venv/bin/python3",
       "args": ["servers/tracker_server.py"],
       "env": {}
     },
     "job-search": {
-      "command": "python",
+      "command": "/Users/sachinpandey/Desktop/All_Projects/job-agent/.venv/bin/python3",
       "args": ["servers/job_search_server.py"],
       "env": {
         "ADZUNA_APP_ID": "${ADZUNA_APP_ID}",
@@ -14,13 +14,18 @@
       }
     },
     "job-import": {
-      "command": "python",
+      "command": "/Users/sachinpandey/Desktop/All_Projects/job-agent/.venv/bin/python3",
       "args": ["servers/job_import_server.py"],
       "env": {}
     },
     "outreach": {
-      "command": "python",
+      "command": "/Users/sachinpandey/Desktop/All_Projects/job-agent/.venv/bin/python3",
       "args": ["servers/outreach_server.py"],
+      "env": {}
+    },
+    "apply": {
+      "command": "/Users/sachinpandey/Desktop/All_Projects/job-agent/.venv/bin/python3",
+      "args": ["servers/apply_server.py"],
       "env": {}
     }
   }
