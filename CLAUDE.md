@@ -1,5 +1,17 @@
 # Job Agent — Sachin Pandey
 
+## Build Status (as of Day 6)
+All 5 MCP servers are built, tested, and committed:
+- [x] Day 2 — `servers/tracker_server.py` (SQLite tracker: add_application, update_status, get_applications)
+- [x] Day 3 — `servers/job_search_server.py` (Adzuna search + ghost detection + H1B filter)
+- [x] Day 4 — `servers/job_import_server.py` (Playwright URL scraper)
+- [x] Day 5 — `servers/outreach_server.py` (LinkedIn URL builder + email drafter)
+- [x] Day 6 — `servers/apply_server.py` (check_platform + open_and_prefill)
+- [x] `.claude/mcp.json` updated with all 5 servers pointing to `.venv/bin/python3`
+- [x] Integration test passed (all 13 steps)
+
+Python venv is at `.venv/` — run `.venv/bin/python3` for all server testing.
+
 ## Commit Rules
 After each meaningful unit of work (new file created, server built and tested, bug fixed):
 1. Run `git add` (specific files only — never `git add -A`)
