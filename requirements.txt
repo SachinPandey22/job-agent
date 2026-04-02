@@ -1,0 +1,14 @@
+# MCP server SDK
+mcp>=1.0.0
+
+# HTTP client (job search server)
+httpx>=0.27.0
+
+# Browser automation (job import server)
+playwright>=1.44.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Data processing (H1B filter)
+pandas>=2.0.0

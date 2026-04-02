@@ -1,0 +1,31 @@
+# Environment & secrets
+.env
+*.env
+
+# Database (local only — don't commit your application data)
+data/*.db
+data/*.sqlite
+
+# Generated output (tailored resumes, cover letters)
+output/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+venv/
+.venv/
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/settings.json
+
+# Node (if any scripts use it)
+node_modules/
+
+# Logs
+*.log

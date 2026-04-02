@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "job-tracker": {
+      "command": "python",
+      "args": ["servers/tracker_server.py"],
+      "env": {}
+    },
+    "job-search": {
+      "command": "python",
+      "args": ["servers/job_search_server.py"],
+      "env": {
+        "ADZUNA_APP_ID": "${ADZUNA_APP_ID}",
+        "ADZUNA_APP_KEY": "${ADZUNA_APP_KEY}"
+      }
+    },
+    "job-import": {
+      "command": "python",
+      "args": ["servers/job_import_server.py"],
+      "env": {}
+    },
+    "outreach": {
+      "command": "python",
+      "args": ["servers/outreach_server.py"],
+      "env": {}
+    }
+  }
+}

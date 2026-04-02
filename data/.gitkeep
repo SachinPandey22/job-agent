@@ -1,0 +1,2 @@
+# This folder stores your local SQLite database (applications.db).
+# The DB file is gitignored — your application data stays on your machine.
