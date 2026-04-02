@@ -21,7 +21,7 @@ Relevant Courses: Software Engineering, Data Structures & Algorithms, Systems Fu
 
 ## Skills
 
-**Languages:** Python, Java, JavaScript, C++
+**Languages:** Python, Java, JavaScript, C++, TypeScript
 
 **Frontend:** React, Recharts, HTML, CSS
 
@@ -31,7 +31,7 @@ Relevant Courses: Software Engineering, Data Structures & Algorithms, Systems Fu
 
 **Cloud & Deployment:** AWS EC2, Vercel, Netlify, Firebase, Render
 
-**Tools & Practices:** Git, GitHub, Bitbucket, Jira, Agile/Scrum, RESTful APIs, OOP, Data Validation, JWT Authentication, Pull Requests, Code Reviews
+**Tools & Practices:** Git, GitHub, Bitbucket, Jira, Agile/Scrum, RESTful APIs, OOP, Data Validation, Pytest, JWT Authentication, Pull Requests, Code Reviews
 
 **AI & Automation:** Retrieval-Augmented Generation (RAG), Vector Databases (Qdrant), Prompt-driven development using LLM APIs
 
