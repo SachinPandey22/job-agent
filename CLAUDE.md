@@ -1,5 +1,13 @@
 # Job Agent — Sachin Pandey
 
+## Commit Rules
+After each meaningful unit of work (new file created, server built and tested, bug fixed):
+1. Run `git add` (specific files only — never `git add -A`)
+2. Run `git commit` with message format: `"Day X: [what was built and tested]"`
+3. Never commit broken or untested code
+4. Never commit `.env` or `data/*.db`
+5. After finishing a session, update this CLAUDE.md with current build status
+
 ## Who I am
 See full resume: /context/resume.md
 See job preferences: /context/preferences.md
@@ -22,13 +30,18 @@ When I ask you to search for jobs:
 4. Present top 5 clearly with: title, company, salary, remote/onsite, H1B status, URL
 
 ### Resume tailoring
-When I give you a job posting (text or URL):
-1. If URL → call import_job_url() first to extract the full description
-2. Read my resume from /context/resume.md
+When I say "tailor my resume for this job" or after importing a job URL, do all of this in sequence:
+1. Read `context/resume.md`
+2. Read the job description (from `import_job_url()` output or pasted text)
 3. Identify: (a) skills they want that I have, (b) gaps, (c) keywords to mirror
-4. Rewrite my bullet points to match the job's language — keep facts true, sharpen phrasing
-5. Write a cover letter: 3 paragraphs, no fluff, specific to the role and company
-6. Output fit score (1–10) and ghost job risk (low/medium/high)
+4. Rewrite my resume bullets using the job's exact language — keep facts true, sharpen phrasing
+5. Reorder the skills section to put their stack first
+6. Write a cover letter: 3 paragraphs, under 250 words, specific to the role and company, no fluff
+7. Output fit score (1–10) with reasoning
+8. List gaps honestly — things they want I don't have yet
+9. Save everything to `output/[Company]_[Role]_[YYYY-MM-DD].md`
+10. Call `add_application()` to log it in the tracker DB
+11. Commit with message: `"tailored: [Company] [Role]"`
 
 ### Application tracking
 When I apply to a job:
